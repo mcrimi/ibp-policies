@@ -1,0 +1,220 @@
+Question
+"Do you use industry standards (i.e. OWASP Software Assurance Maturity Model, ISO 27034) to build in security for your Systems/Software Development Lifecycle (SDLC)?"
+Do you verify that all of your software suppliers adhere to industry standards for Systems/Software Development Lifecycle (SDLC) security?
+"(SaaS only) Do you review your applications for security vulnerabilities and address any issues prior to deployment to production? Do you also conduct dynamic testing? If so, what tools are used?"
+Are all requirements and trust levels for customers’ access defined and documented?
+Does your data management policies and procedures require audits to verify data input and output integrity routines? Please describe
+Are data input and output integrity routines (i.e. MD5/SHA checksums) implemented for application interfaces and databases to prevent manual or systematic processing errors or corruption of data?
+"Is your Data Security Architecture designed using an industry standard (e.g., CDSA, MULITSAFE, CSA Trusted Cloud Architectural Standard, FedRAMP, CAESARS)? Audit Assurance & ComplianceCOLLAPSE"
+"Do you develop and maintain an agreed upon audit plan (e.g., scope, objective, frequency, resources,etc.) for reviewing the efficiency and effectiveness of implemented security controls?"
+Does your audit program take into account effectiveness of implementation of security operations?
+"Do you conduct network penetration tests of your cloud service infrastructure at least annually? If yes, how often?"
+"Do you conduct application penetration tests of your cloud infrastructure regularly as prescribed by industry best practices and guidance? If yes, how often?"
+Do you conduct internal audits at least annually?
+Do you conduct independent audits at least annually?
+"Are the results of the penetration tests available to tenants at their request? If yes, would you provide a high-level summary so we knew what security issues existed along with their severity and plan of action?"
+"Are the results of internal and external audits available to tenants at their request? If yes, would you provide a high-level summary so we knew what security issues existed along with their severity and plan of action?"
+"Do you have a program in place that includes the ability to monitor changes to the regulatory requirements in relevant jurisdictions, adjust your security program for changes to legal requirements, and ensure compliance with relevant regulatory requirements? Where will Bayer data be transported? Business Continuity Management & Operational ResilienceCOLLAPSE"
+Does your organization have a plan or framework for business continuity management or disaster recovery management?
+Do you provide a disaster recovery capability?
+Do you monitor service continuity with upstream providers in the event of provider failure?
+"Do you provide access to operational redundancy reports, including the services you rely on?"
+Do you share your business continuity and redundancy plans with your tenants? Do you have documented business continuity and redundancy plans? How often are these plans tested?
+Are business continuity plans subject to testing at planned intervals or upon significant organizational or environmental changes to ensure continuing effectiveness?
+"Does your organization adhere to any international or industry standards when it comes to securing, monitoring, maintaining and testing of datacenter utilities services and environmental conditions?"
+"Has your organization implemented environmental controls, fail-over mechanisms or other redundancies to secure utility services and mitigate environmental conditions?"
+"Do you have documented policies, procedures and supporting business processes for equipment and datacenter maintenance?"
+Do you have an equipment and datacenter maintenance routine or plan?
+"Are security mechanisms and redundancies implemented to protect equipment from utility service outages (e.g., power failures, network disruptions, etc.)?"
+"Do you use industry standards and frameworks to determine the impact of any disruption to your organization (i.e. criticality of services and recovery priorities, disruption tolerance, RPO and RTO etc) ?"
+Does your organization conduct impact analysis pertaining to possible disruptions to the cloud service?
+Are policies and procedures established and made available for all personnel to adequately support services operations’ roles?
+Do you have technical capabilities to enforce tenant data retention policies? Please explain how this is enforced?
+"Do you have documented policies and procedures demonstrating adherence to data retention periods as per legal, statutory or regulatory compliance requirements?"
+"Have you implemented backup or recovery mechanisms to ensure compliance with regulatory, statutory, contractual or business requirements? Are the backups encrypted with AES-256?"
+Do you test your backup or redundancy mechanisms at least annually? Change Control & Configuration ManagementCOLLAPSE
+"Are policies and procedures established for management authorization for development or acquisition of new applications, systems, databases, infrastructure, services, operations and facilities?"
+"Are policies and procedures for change management, release, and testing adequately communicated to external business partners?"
+Are policies and procedures adequately enforced to ensure external business partners comply with change management requirements?
+Is documentation describing known issues with certain products/services available?
+Are there policies and procedures in place to triage and remedy reported bugs and security vulnerabilities for product and service offerings?
+Do you have controls in place to ensure that standards of quality are being met for all software development?
+Are mechanisms in place to ensure that all debugging and test code elements are removed from released software versions?
+"Do you have controls in place to restrict and monitor the installation of unauthorized software onto your systems? If yes, how is this accomplished?"
+Do you provide tenants with documentation that describes your production change management procedures and their roles/rights/responsibilities within it?
+Do you have policies and procedures established for managing risks with respect to change management in production environments?
+"Do you provide a capability to identify data and virtual machines via policy tags/metadata (e.g., tags can be used to limit guest operating systems from booting/instantiating/transporting data in the wrong country)?"
+"Do you provide a capability to identify data and hardware via policy tags/metadata/hardware tags (e.g., TXT/TPM, VN-Tag, etc.)?"
+"Do you inventory, document, and maintain data flows for data that is resident (permanent or temporary) within the services' applications and infrastructure network and systems?"
+"Do you provide standardized (e.g. ISO/IEC) non-proprietary encryption algorithms (3DES, AES, etc.) to tenants in order for them to protect their data if it is required to move through public networks (e.g., the Internet)?"
+"Do you utilize open encryption methodologies any time your infrastructure components need to communicate with each other via public networks (e.g., Internet-based replication of data from one environment to another)? What version of TLS and what cipher suites/algorithms are used to encrypt data in transit? Please provide url that Bayer will use to access the solution."
+"Are policies and procedures established for data labeling and handling in order to ensure the security of data and objects that contain data? Is there the capability to allow the users to see that information stored in your system is classified (e.g. labeled as ""Secret"" per Bayer's classification system?)"
+"Do you follow a structured data-labeling standard (e.g., ISO 15489, Oasis XML Catalog Specification, CSA data type guidance)?"
+Are mechanisms for label inheritance implemented for objects that act as aggregate containers for data?
+Do you have procedures in place to ensure production data shall not be replicated or used in non-production environments? Please describe how this is enforced
+"Are the responsibilities regarding data stewardship defined, assigned, documented, and communicated?"
+"Do you support the secure deletion (e.g., degaussing/cryptographic wiping) of archived and backed-up data? If yes, do you follow NIST Special Publication (SP) 800-88-Guidelines for Media Sanitization? How long is data retained?"
+"Can you provide a published procedure for exiting the service arrangement, including assurance to sanitize all computing resources of tenant data once a customer has exited your environment or has vacated a resource? How is data handled and deleted at the end of service? Is this documented in your contract? Datacenter SecurityCOLLAPSE"
+Do you maintain a complete inventory of all of your critical assets located at all sites/ or geographical locations and their assigned ownership?
+"Are physical security perimeters (e.g., fences, walls, barriers, guards, gates, electronic surveillance, physical authentication mechanisms, reception desks, and security patrols) implemented for all areas housing sensitive data and information systems?"
+Do you have a capability to use system geographic location as an authentication factor? Do you support other authentication factors such as IP whitelisting?
+Can you provide tenants with your asset management policies and procedures?
+"Can you provide evidence that policies, standards, and procedures have been established for maintaining a safe and secure working environment in offices, rooms, facilities, and secure areas?"
+"Can you provide evidence that your personnel and involved third parties have been trained regarding your documented policies, standards, and procedures?"
+"Are physical access control mechanisms (e.g. CCTV cameras, ID cards, checkpoints) in place to secure, constrain and monitor egress and ingress points?"
+"Are ingress and egress points, such as service areas and other points where unauthorized personnel may enter the premises, monitored, controlled and isolated from data storage and process?"
+Do you restrict physical access to information assets and functions by users and support personnel? Encryption & Key ManagementCOLLAPSE
+Do you have key management policies binding keys to identifiable owners?
+Do you maintain key management procedures?
+Do you have documented ownership for each stage of the lifecycle of encryption keys?
+"Do you encrypt tenant data at rest (on disk/storage) within your environment? If yes, what encryption algorithm is used? (e.g. AES-256)? Is Bayer data encrypted with its own key?"
+"Do you have documentation establishing and defining your encryption management policies, procedures, and guidelines?"
+Do you have platform and data appropriate encryption that uses open/validated formats and standard algorithms?
+"Do you have documented information security baselines for every component of your infrastructure (e.g., hypervisors, operating systems, routers, DNS servers, etc.)? Are the admin consoles hardened? Where will application be used? Mobile, external laptops?"
+Do you have the capability to continuously monitor and report the compliance of your infrastructure against your information security baselines? Please describe your monitoring and reporting process
+"Are your technical, business, and executive managers responsible for maintaining awareness of and compliance with security policies, procedures, and standards for both themselves and their employees as they pertain to the manager and employees' area of responsibility?"
+Do you provide tenants with documentation describing your Information Security Management Program (ISMP)?
+Do you review your Information Security Management Program (ISMP) at least once a year?
+"Do executive and line management take formal action to support information security through clearly-documented direction and commitment, and ensure the action has been assigned?"
+Are information security policies authorized by the organization's business leadership (or other accountable business role or function) and supported by a strategic business plan and an information security management program inclusive of defined information security roles and responsibilities for business leadership?
+Do you have agreements to ensure your providers adhere to your information security and privacy policies?
+"Can you provide evidence of due diligence mapping of your controls, architecture, and processes to regulations and/or standards?"
+"Do you disclose which controls, standards, certifications, and/or regulations you comply with?"
+Is a formal disciplinary or sanction policy established for employees who have violated security policies and procedures?
+Are employees made aware of what actions could be taken in the event of a violation via their policies and procedures?
+"Do risk assessment results include updates to security policies, procedures, standards, and controls to ensure they remain relevant and effective?"
+Do you notify your tenants when you make material changes to your information security and/or privacy policies?
+"Do you perform, at minimum, annual reviews to your privacy and security policies?"
+"Do you have a documented, organization-wide program in place to manage risk?"
+Do you make available documentation of your organization-wide risk management program? Human ResourcesCOLLAPSE
+Do you have asset return procedures outlining how assets should be returned within an established period?
+Do your employment agreements incorporate provisions and/or terms in adherence to established information governance and security policies?
+"Do you require that employment agreements are signed by newly hired or on-boarded workforce personnel prior to granting workforce personnel user access to corporate facilities, resources, and assets?"
+"Are documented policies, procedures, and guidelines in place to govern change in employment and/or termination?"
+Do the above procedures and guidelines account for timely revocation of access and return of assets?
+"Are policies and procedures established and measures implemented to strictly limit access to your sensitive data and tenant data from portable and mobile devices (e.g., laptops, cell phones, and personal digital assistants (PDAs)), which are generally higher-risk than non-portable devices (e.g., desktop computers at the provider organization’s facilities)?"
+"Are requirements for non-disclosure or confidentiality agreements reflecting the organization's needs for the protection of data and operational details identified, documented, and reviewed at planned intervals?"
+Do you provide tenants with a role definition document clarifying your administrative responsibilities versus those of the tenant?
+Do you have policies and procedures in place to define allowances and conditions for permitting usage of organizationally-owned or managed user end-point devices and IT infrastructure network and systems components?
+"Do you provide a formal, role-based, security awareness training program for cloud-related access and data management issues (e.g., multi-tenancy, nationality, cloud delivery model, segregation of duties implications, and conflicts of interest) for all persons with access to tenant data?"
+Do you document employee acknowledgment of training they have completed?
+Is successful and timed completion of the training program(s) considered a prerequisite for acquiring and maintaining access to sensitive systems?
+"Are personnel informed of their responsibilities for maintaining awareness and compliance with published security policies, procedures, standards, and applicable regulatory requirements?"
+"Are there policies and procedures to ensure that unattended workspaces do not have openly visible (e.g., on a desktop) sensitive documents? Identity & Access ManagementCOLLAPSE"
+"Do you have policies, procedures and technical measures in place to ensure appropriate data/assets access management in adherence to legal, statutory or regulatory compliance requirements?"
+Do you have procedures and technical measures in place for user account entitlement de-/provisioning based on the rule of least privilege?
+Do you have procedures and technical measures in place for data access segmentation in multi-tenant system architectures?
+Do you provide metrics to track the speed with which you are able to remove systems access that is no longer required for business purposes?
+"Do you manage and store the identity of all personnel who have access to the IT infrastructure, including their level of access? If yes, how often is this reviewed?"
+"Do you manage and store the user identity of all personnel who have network access, including their level of access? If yes, how often is this reviewed?"
+Do you provide tenants with documentation on how you maintain segregation of duties within your cloud service offering? Note - Need to understand how segregation of duties and principle of least privilege is enforced.
+"Are controls in place to prevent unauthorized access to your application, program, or object source code, and assure it is restricted to authorized personnel only? Please explain. (i.e. segregation of duties, least privilege, etc.)"
+"Are controls in place to prevent unauthorized access to tenant application, program, or object source code, and assure it is restricted to authorized personnel only? Please describe the controls"
+Does your organization conduct third-party unauthorized access risk assessments?
+"Do you document how you grant, approve and enforce access restrictions to tenant/customer credentials following the rules of least privilege? Please describe this process Note - Bayer Business may also need to provide context for this item"
+"Based on the rules of least privilege, do you have policies and procedures established for permissible storage and access of identities used for authentication?"
+"Do you provide upon the request of users with legitimate interest access (e.g., employees, contractors, customers (tenants), business partners and/or suppliers) to data and any owned or managed (physical and virtual) applications, infrastructure systems and network components?"
+"Do you require a periodical authorization and validation (e.g. at least annually) of the entitlements for all system users and administrators (exclusive of users maintained by your tenants), based on the rule of least privilege, by business leadership or other accountable business role or function? If yes, how often is this reviewed? How many admins have access to Bayer data? Will Bayer be notified of when access is given to a new admin? How many admins at your hosting provider will be able to access Bayer data? Note - Need to understand how Bayer will manage user access and authorization"
+Do you collect evidence to demonstrate that the policy (see question IAM-10.1) has been enforced?
+Do you ensure that remediation actions for access violations follow user access policies?
+"Will you share user entitlement and remediation reports with your tenants, if inappropriate access may have been allowed to tenant data?"
+"Is timely deprovisioning, revocation, or modification of user access to the organizations systems, information assets, and data implemented upon any change in status of employees, contractors, customers, business partners, or involved third parties?"
+"Is any change in user access status intended to include termination of employment, contract or agreement, change of employment or transfer within the organization?"
+Do you use open standards to delegate authentication capabilities to your tenants?
+"Do you support password (e.g., minimum length, age, history, complexity) and account lockout (e.g., lockout threshold, lockout duration) policy enforcement? Please provide your password policy"
+"Are access to utility programs used to manage virtualized partitions (e.g. shutdown, clone, etc) appropriately restricted and monitored? Infrastructure & Virtualization SecurityCOLLAPSE"
+"Are file integrity (host) and network intrusion detection (IDS) tools implemented to help facilitate timely detection, investigation by root cause analysis, and response to incidents? Please describe. What tools are used?"
+Can you provide evidence that due diligence mapping of regulations and standards to your controls/architecture/processes has been performed?
+"Are audit logs reviewed on a regular basis for security events (e.g., with automated tools)? If yes, how often? Please explain. Are there certain users who have the capability/ability to modify logs like users with elevated privileges? What controls are in place to detect this type of tampering?"
+"Do you log and alert any changes made to virtual machine images regardless of their running state (e.g., dormant, off or running)?"
+"Do you use a synchronized time-service protocol (e.g., NTP) to ensure all systems have a common time reference?"
+"Do you provide documentation regarding what levels of system (e.g., network, storage, memory, I/O, etc.) oversubscription you maintain and under what circumstances/scenarios?"
+Do you restrict use of the memory oversubscription capabilities present in the hypervisor?
+"Does your system's capacity requirements take into account current, projected, and anticipated capacity needs for all systems used to provide services to the tenants?"
+"Is system performance monitored and tuned in order to continuously meet regulatory, contractual, and business requirements for all the systems used to provide services to the tenants?"
+"For your IaaS offering, do you provide customers with guidance on how to create a layered security architecture equivalence using your virtualized solution?"
+"Do you regularly review for appropriateness the allowed access/connectivity (e.g., firewall rules) between security domains/zones within the network?"
+Are all firewall access control lists documented with business justification?
+"Are operating systems hardened to provide only the necessary ports, protocols, and services to meet business needs using technical controls (e.g., antivirus, file integrity monitoring, and logging) as part of their baseline build standard or template? If yes, do you have hardening guideline/detail documentation? If so, can you provide? What ports are open? What OS and version are you utilizing? When hardening the environment do you: - No installation of unnecessary components - Deactivation of not needed programs, services, commands - Restrict and control usage of privileged programs - Have security controls for system-tools - Restrict use of file shares (and the like) - Conduct regular security checks"
+"For your SaaS or PaaS offering, do you provide tenants with separate environments for production and test processes?"
+"For your IaaS offering, do you provide tenants with guidance on how to create suitable production and test environments?"
+Do you logically and physically segregate production and non-production environments?
+"Are system and network environments protected by a firewall or virtual firewall to ensure business and customer security requirements? Do you review firewall settings? If so, how frequently? Do you have a 'deny all' default setting and then open up ports only as needed?"
+"Are system and network environments protected by a firewall or virtual firewall to ensure compliance with legal, regulatory and contractual requirements?"
+"Have you implemented the necessary measures for the appropriate isolation and segmentation of tenants' access to infrastructure system and network components, in adherence to established policies, legal, statutory, and regulatory compliance obligations?"
+"Do you have the ability to logically segment or encrypt customer data such that data may be produced for a single tenant only, without inadvertently accessing another tenant's data? How is Bayer data stored? In its own database, own VPC? Or is it a shared database? What kind of database is used? What is the current version?"
+Are system and network environments protected by a firewall or virtual firewall to ensure protection and isolation of sensitive data?
+"Do you restrict personnel access to all hypervisor management functions or administrative consoles for systems hosting virtualized systems based on the principle of least privilege and supported through technical controls (e.g., two-factor authentication, audit trails, IP address filtering, firewalls and TLS-encapsulated communications to the administrative consoles)?"
+Are policies and procedures established and mechanisms configured and implemented to protect the wireless network environment perimeter and to restrict unauthorized wireless traffic?
+"Are policies and procedures established and mechanisms implemented to ensure wireless security settings are enabled with strong encryption for authentication and transmission, replacing vendor default settings (e.g., encryption keys, passwords, SNMP community strings)?"
+Are policies and procedures established and mechanisms implemented to protect wireless network environments and detect the presence of unauthorized (rogue) network devices for a timely disconnect from the network?
+Do your network architecture diagrams clearly identify high-risk environments and data flows that may have legal compliance impacts? Please provide a detailed network architecture diagram
+Do you publish a list of all APIs available in the service and indicate which are standard and which are customized?
+"Is unstructured customer data available on request in an industry-standard format (e.g., .doc, .xls, or .pdf)?"
+Do you provide policies and procedures (i.e. service level agreements) governing the use of APIs for interoperability between your service and third-party applications?
+Do you provide policies and procedures (i.e. service level agreements) governing the migration of application data to and from your service?
+Do you provide consumers (tenants) with documentation detailing the relevant interoperability and portability network protocol standards that are involved?
+"Do you use an industry-recognized virtualization platform and standard virtualization formats (e.g., OVF) to help ensure interoperability?"
+"Do you have documented custom changes made to any hypervisor in use, and all solution-specific virtualization hooks available for customer review? Mobile SecurityCOLLAPSE"
+Do you provide anti-malware training specific to mobile devices as part of your information security awareness training?
+Does your BYOD policy and training clearly state which applications and applications stores are approved for use on BYOD devices?
+Do you have a documented mobile device policy in your employee training that clearly defines mobile devices and the accepted usage and requirements for mobile devices?
+Do you have a documented list of pre-approved cloud based services that are allowed to be used for use and storage of company business data via a mobile device?
+"Do you have a documented application validation process for testing device, operating system, and application compatibility issues?"
+Do you have a BYOD policy that defines the device(s) and eligibility requirements allowed for BYOD usage? Will a Bayer application and/or data be accessible via a mobile device?
+"Do you maintain an inventory of all mobile devices storing and accessing company data which includes device status (e.g., operating system and patch levels, lost or decommissioned, device assignee)?"
+"Do you have a centralized mobile device management solution deployed to all mobile devices that are permitted to store, transmit, or process company data? If yes, please describe"
+"Does your mobile device policy require the use of encryption for either the entire device or for data identified as sensitive enforceable through technology controls for all mobile devices? If yes, please describe"
+"Does your mobile device policy prohibit the circumvention of built-in security controls on mobile devices (e.g., jailbreaking or rooting)? If yes, please describe"
+"Does your BYOD policy clearly define the expectation of privacy, requirements for litigation, e-discovery, and legal holds?"
+Does the BYOD policy clearly state the expectations over the loss of non-company data in case a wipe of the device is required?
+"Do you manage all changes to mobile device operating systems, patch levels, and applications via your company's change management processes? If yes, please describe"
+"Do you have password policies for enterprise issued mobile devices and/or BYOD mobile devices? If yes, please describe"
+"Are your password policies enforced through technical controls (i.e. MDM)? If yes, please describe"
+Do your password policies prohibit the changing of authentication requirements (i.e. password/PIN length) via a mobile device?
+Do you have a policy that requires BYOD users to perform backups of specified corporate data?
+Do you have a policy that requires BYOD users to prohibit the usage of unapproved application stores?
+Do you have a policy that requires BYOD users to use anti-malware software (where supported)?
+Does your IT provide remote wipe or corporate data wipe for all company-accepted BYOD devices?
+Does your IT provide remote wipe or corporate data wipe for all company-assigned mobile devices?
+Does your BYOD policy clarify the systems and servers allowed for use or access on the BYOD-enabled device?
+"Does your BYOD policy specify the user roles that are allowed access via a BYOD-enabled device? Security Incident Management, E-Discovery, & Cloud ForensicsCOLLAPSE"
+Do you have a documented security incident response plan?
+Do you integrate customized tenant requirements into your security incident response plans? Will Bayer be notified within 24 hours of a confirmed incident/breach?
+Do you publish a roles and responsibilities document specifying what you vs. your tenants are responsible for during security incidents?
+Have you tested your security incident response plans in the last year?
+"Are workforce personnel and external business relationships adequately informed of their responsibility, and, if required, consent and/or contractually required to report all information security events in a timely manner? Please describe your SIEM solution and what events are logged and monitored. Are alerts generated when certain thresholds are reached (e.g., changes to audit records (1), unauthorized elevation of privileges (1), take over ownership (1), failed logins (5))?"
+Does your incident response plan comply with industry standards for legally admissible chain-of-custody management processes and controls?
+Does your incident response capability include the use of legally admissible forensic data collection and analysis techniques?
+"Do you monitor and quantify the types, volumes, and impacts on all information security incidents?"
+"Will you share statistical information for security incident data with your tenants upon request? Note - This is specifically referring to only incidents that may directly impact/relate to Bayer Supply Chain Management, Transparency, and AccountabilityCOLLAPSE"
+"Do you design and implement controls to mitigate and contain data security risks through proper separation of duties, role-based access, and least-privileged access for all personnel within your supply chain? How do you address security with your hosting provider and any other providers?"
+Do you provide tenants with capacity planning and use reports?
+"Do you perform annual internal assessments of conformance and effectiveness of your policies, procedures, and supporting measures and metrics?"
+"Do you select and monitor outsourced providers in compliance with laws in the country where the data is processed, stored, and transmitted?"
+Do you select and monitor outsourced providers to ensure that they are in compliance with applicable legislation?
+Does legal counsel review all third-party agreements?
+Do third-party agreements include provision for the security and protection of information and assets?
+Do you have the capability to recover data for a specific customer in the case of a failure or data loss?
+Do you have the capability to restrict the storage of customer data to specific countries or geographic locations? Where will Bayer data be stored?
+Can you provide the physical location/geography of storage of a tenant’s data upon request? Where is the data physically located? Has that been determined yet?
+Can you provide the physical location/geography of storage of a tenant's data in advance?
+Are systems in place to monitor for privacy breaches and notify tenants expeditiously if a privacy event may have impacted their data? How quickly are tenants notified?
+Do you provide the client with a list and copies of all subprocessing agreements and keep this updated?
+Do you review the risk management and governance processes of partners to account for risks inherited from other members of that partner's supply chain?
+"Are policies and procedures established, and supporting business processes and technical measures implemented, for maintaining complete, accurate, and relevant agreements (e.g., SLAs) between providers and customers (tenants)?"
+Do you provide tenants with ongoing visibility and reporting of your operational Service Level Agreement (SLA) performance?
+"Do you make standards-based information security metrics (CSA, CAMM, etc.) available to your tenants? If yes, please specify which metrics"
+Do you provide customers with ongoing visibility and reporting of your SLA performance?
+Do your data management policies and procedures address tenant and service level conflicts of interests?
+Do you review all service level agreements at least annually?
+Do you assure reasonable information security across your information supply chain by performing an annual review? Do you have any contractual obligations with providers to ensure security requirements are met?
+Does your annual review include all partners/third-party providers upon which your information supply chain depends?
+Do you have external third party services conduct vulnerability scans and periodic penetration tests on your applications and networks? What tools are used? Can you provide results? Threat and Vulnerability ManagementCOLLAPSE
+Do you conduct network-layer vulnerability scans regularly as prescribed by industry best practices?
+Do you conduct application-layer vulnerability scans regularly as prescribed by industry best practices?
+Do you conduct local operating system-layer vulnerability scans regularly as prescribed by industry best practices?
+Will you make the results of vulnerability scans available to tenants at their request?
+"Do you have a capability to patch vulnerabilities across all of your computing devices, applications, and systems? Please specify your patching timeframes for Critical/High/Medium findings."
+Do you inform customers (tenant) of policies and procedures and identified weaknesses if customer (tenant) data is used as part the service and/or customer (tenant) has some shared responsibility over implementation of control?
+"Is mobile code authorized before its installation and use, and the code configuration checked, to ensure that the authorized mobile code operates according to a clearly defined security policy?"

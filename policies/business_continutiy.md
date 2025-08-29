@@ -272,7 +272,6 @@ CloudWatch dashboard to track:
 - Backup job status  
 - Replication lag metrics  
 - Service health indicators  
-- Cost tracking for DR resources  
 
 ## 11. Training and Awareness
 
@@ -280,41 +279,50 @@ CloudWatch dashboard to track:
 | Role          | Training Type       | Frequency  |
 |---------------|--------------------|------------|
 | All IT Staff  | BC/DR overview     | Annual     |
-| IRT Members   | Incident response  | Quarterly  |
-| DevOps Team   | Technical recovery | Bi-annual  |
-| Leadership    | Decision making    | Annual     |
+| Dev Team   | Technical recovery | Bi-annual  |
+
 
 ### 11.2 Documentation
-Maintain in Confluence:  
-- Runbooks for each scenario  
-- Technical recovery guides  
-- Contact lists  
-- Lessons learned  
-- Test results  
+Maintain in Confluence with simple, accessible formats:
 
-## 12. Budget and Resources
+#### Runbooks for Each Scenario
+- **Step-by-step procedures** for common failure scenarios (database down, server failure, network issues)
+- **Command examples** with actual server names and IP addresses
+- **Decision trees** for determining when to escalate vs. self-resolve
+- **Screenshots** of key admin interfaces and error messages
+- **Estimated time** for each recovery step
 
-### 12.1 DR Infrastructure Costs
-| Resource          | Monthly Cost | Purpose       |
-|-------------------|--------------|---------------|
-| RDS Read Replica  | ~$200        | Database DR   |
-| S3 Replication    | ~$50         | Data backup   |
-| AWS Backup        | ~$100        | Automated backups |
-| Reserved capacity | ~$150        | Quick deployment  |
-| **Total**         | **~$500**    |               |
+#### Technical Recovery Guides
+- **System restart procedures** with proper shutdown/startup sequences
+- **Database recovery steps** including backup restoration commands
+- **Network troubleshooting** with common fixes and contact info for ISP
+- **Application deployment** rollback procedures
+- **Configuration file locations** and backup copies
 
-### 12.2 Cost Optimization
-- Use lifecycle policies for old backups  
-- Shut down non-critical DR resources  
-- Regular cost reviews  
-- Use AWS Cost Explorer  
+#### Contact Lists
+- **Primary and backup contacts** for each team member with multiple phone numbers
+- **Vendor support contacts** (AWS support, ISP, hosting providers) with account numbers
+- **Emergency services** and facility management contacts
+- **Customer communication** templates and distribution lists
+- **Management escalation** chain with decision authorities
+
+#### Lessons Learned
+- **Post-incident summaries** with what worked and what didn't
+- **Process improvements** identified after each incident
+- **Tool recommendations** based on actual experience
+- **Training needs** identified from real incidents
+- **Cost impact** of outages and recovery efforts
+
+#### Test Results
+- **DR test reports** with actual recovery times achieved
+- **Backup verification** logs showing successful restores
+- **Failure scenarios** that were tested and outcomes
+- **Improvement actions** needed based on test results
+- **Next test dates** and scenarios to focus on
+
 
 ## 13. Compliance and Audit
 
-### 13.1 Regulatory Requirements
-- GDPR: Data availability and resilience  
-- ISO 27001: Business continuity planning  
-- Industry standards: Best practices  
 
 ### 13.2 Audit Trail
 - All DR activities logged in CloudTrail  
@@ -340,17 +348,10 @@ Maintain in Confluence:
 ## 15. Policy Exceptions
 ### 15.1 Exception Handling
 - Document any deviations from policy  
-- Obtain approval from IT Lead  
+- Obtain approval from Policy Owner 
 - Implement compensating controls  
 - Review exceptions quarterly  
 
-## Policy Governance
-- **Policy Owner**: IT Lead  
-- **Technical Owner**: DevOps Lead  
-- **Review Frequency**: Annual or after major incidents  
-- **Last Updated**: [Date]  
-- **Next Review**: [Date + 1 year]  
-- **Version**: 1.0  
 
 ## References
 - AWS Well-Architected Framework - Reliability Pillar  
@@ -358,7 +359,15 @@ Maintain in Confluence:
 - NIST SP 800-34 Contingency Planning Guide  
 - CSAIQ Lite BCR Controls  
 
+## Policy Governance
+- **Policy Owner**: Mariano Crimi
+- **Security Owner**: Jean-Marcel Ribaut
+- **Review Frequency**: Annual
+- **Last Updated**: December 2024
+- **Next Review**: December 2025
+- **Version**: 1.0
+
 ## Revision History
-| Version | Date   | Author   | Changes              |
-|---------|--------|----------|----------------------|
-| 1.0     | [Date] | [Author] | Initial policy creation |
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | 12/12/2024 | Mariano Crimi | Initial policy creation |
