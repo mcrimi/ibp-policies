@@ -1,0 +1,112 @@
+Type.registerNamespace('Security2000.GenericContent');
+Security2000.GenericContent.GenericContentService=function() {
+Security2000.GenericContent.GenericContentService.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+Security2000.GenericContent.GenericContentService.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return Security2000.GenericContent.GenericContentService._staticInstance.get_path();},
+CastStatusHistorySave:function(castContentId,scoredardContentId,scorecardFieldId,statusSelectValueId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'CastStatusHistorySave',false,{castContentId:castContentId,scoredardContentId:scoredardContentId,scorecardFieldId:scorecardFieldId,statusSelectValueId:statusSelectValueId},succeededCallback,failedCallback,userContext); },
+GetTooltip:function(context,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetTooltip',false,{context:context},succeededCallback,failedCallback,userContext); },
+GetMapPoints:function(mapOptions,contentIds,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetMapPoints',false,{mapOptions:mapOptions,contentIds:contentIds},succeededCallback,failedCallback,userContext); },
+GetGeoCodes:function(MapPointsToBeGeocoded,BingSessionToken,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetGeoCodes',false,{MapPointsToBeGeocoded:MapPointsToBeGeocoded,BingSessionToken:BingSessionToken},succeededCallback,failedCallback,userContext); },
+GetRecordTooltip:function(point,content,fieldIds,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetRecordTooltip',false,{point:point,content:content,fieldIds:fieldIds},succeededCallback,failedCallback,userContext); },
+GetValuesListTree:function(context,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetValuesListTree',false,{context:context},succeededCallback,failedCallback,userContext); },
+GetFlattenedValuesListValues:function(context,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetFlattenedValuesListValues',false,{context:context},succeededCallback,failedCallback,userContext); },
+GetValuesListValues:function(fieldNumber,value,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetValuesListValues',false,{fieldNumber:fieldNumber,value:value},succeededCallback,failedCallback,userContext); },
+Save:function(contentIdContainer,contentVersionId,clientValues,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Save',false,{contentIdContainer:contentIdContainer,contentVersionId:contentVersionId,clientValues:clientValues},succeededCallback,failedCallback,userContext); },
+GetUsersGroupsListValuesByField:function(context,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetUsersGroupsListValuesByField',false,{context:context},succeededCallback,failedCallback,userContext); },
+GetUsersGroupsListValues:function(fieldNumber,recordCreatorUserId,value,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetUsersGroupsListValues',false,{fieldNumber:fieldNumber,recordCreatorUserId:recordCreatorUserId,value:value},succeededCallback,failedCallback,userContext); },
+GetAvailableFields:function(id,type,parentValueName,fieldName,referenceFieldName,levelName,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetAvailableFields',false,{id:id,type:type,parentValueName:parentValueName,fieldName:fieldName,referenceFieldName:referenceFieldName,levelName:levelName},succeededCallback,failedCallback,userContext); },
+GetDynamicFilterFieldIds:function(reportId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetDynamicFilterFieldIds',false,{reportId:reportId},succeededCallback,failedCallback,userContext); },
+GetFacetedDataTree:function(context,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetFacetedDataTree',false,{context:context},succeededCallback,failedCallback,userContext); }}
+Security2000.GenericContent.GenericContentService.registerClass('Security2000.GenericContent.GenericContentService',Sys.Net.WebServiceProxy);
+Security2000.GenericContent.GenericContentService._staticInstance = new Security2000.GenericContent.GenericContentService();
+Security2000.GenericContent.GenericContentService.set_path = function(value) { Security2000.GenericContent.GenericContentService._staticInstance.set_path(value); }
+Security2000.GenericContent.GenericContentService.get_path = function() { return Security2000.GenericContent.GenericContentService._staticInstance.get_path(); }
+Security2000.GenericContent.GenericContentService.set_timeout = function(value) { Security2000.GenericContent.GenericContentService._staticInstance.set_timeout(value); }
+Security2000.GenericContent.GenericContentService.get_timeout = function() { return Security2000.GenericContent.GenericContentService._staticInstance.get_timeout(); }
+Security2000.GenericContent.GenericContentService.set_defaultUserContext = function(value) { Security2000.GenericContent.GenericContentService._staticInstance.set_defaultUserContext(value); }
+Security2000.GenericContent.GenericContentService.get_defaultUserContext = function() { return Security2000.GenericContent.GenericContentService._staticInstance.get_defaultUserContext(); }
+Security2000.GenericContent.GenericContentService.set_defaultSucceededCallback = function(value) { Security2000.GenericContent.GenericContentService._staticInstance.set_defaultSucceededCallback(value); }
+Security2000.GenericContent.GenericContentService.get_defaultSucceededCallback = function() { return Security2000.GenericContent.GenericContentService._staticInstance.get_defaultSucceededCallback(); }
+Security2000.GenericContent.GenericContentService.set_defaultFailedCallback = function(value) { Security2000.GenericContent.GenericContentService._staticInstance.set_defaultFailedCallback(value); }
+Security2000.GenericContent.GenericContentService.get_defaultFailedCallback = function() { return Security2000.GenericContent.GenericContentService._staticInstance.get_defaultFailedCallback(); }
+Security2000.GenericContent.GenericContentService.set_enableJsonp = function(value) { Security2000.GenericContent.GenericContentService._staticInstance.set_enableJsonp(value); }
+Security2000.GenericContent.GenericContentService.get_enableJsonp = function() { return Security2000.GenericContent.GenericContentService._staticInstance.get_enableJsonp(); }
+Security2000.GenericContent.GenericContentService.set_jsonpCallbackParameter = function(value) { Security2000.GenericContent.GenericContentService._staticInstance.set_jsonpCallbackParameter(value); }
+Security2000.GenericContent.GenericContentService.get_jsonpCallbackParameter = function() { return Security2000.GenericContent.GenericContentService._staticInstance.get_jsonpCallbackParameter(); }
+Security2000.GenericContent.GenericContentService.set_path("/GenericContent/GenericContentService.asmx");
+Security2000.GenericContent.GenericContentService.CastStatusHistorySave= function(castContentId,scoredardContentId,scorecardFieldId,statusSelectValueId,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.CastStatusHistorySave(castContentId,scoredardContentId,scorecardFieldId,statusSelectValueId,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetTooltip= function(context,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetTooltip(context,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetMapPoints= function(mapOptions,contentIds,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetMapPoints(mapOptions,contentIds,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetGeoCodes= function(MapPointsToBeGeocoded,BingSessionToken,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetGeoCodes(MapPointsToBeGeocoded,BingSessionToken,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetRecordTooltip= function(point,content,fieldIds,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetRecordTooltip(point,content,fieldIds,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetValuesListTree= function(context,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetValuesListTree(context,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetFlattenedValuesListValues= function(context,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetFlattenedValuesListValues(context,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetValuesListValues= function(fieldNumber,value,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetValuesListValues(fieldNumber,value,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.Save= function(contentIdContainer,contentVersionId,clientValues,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.Save(contentIdContainer,contentVersionId,clientValues,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetUsersGroupsListValuesByField= function(context,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetUsersGroupsListValuesByField(context,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetUsersGroupsListValues= function(fieldNumber,recordCreatorUserId,value,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetUsersGroupsListValues(fieldNumber,recordCreatorUserId,value,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetAvailableFields= function(id,type,parentValueName,fieldName,referenceFieldName,levelName,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetAvailableFields(id,type,parentValueName,fieldName,referenceFieldName,levelName,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetDynamicFilterFieldIds= function(reportId,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetDynamicFilterFieldIds(reportId,onSuccess,onFailed,userContext); }
+Security2000.GenericContent.GenericContentService.GetFacetedDataTree= function(context,onSuccess,onFailed,userContext) {Security2000.GenericContent.GenericContentService._staticInstance.GetFacetedDataTree(context,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+Type.registerNamespace('ArcherTech.Common.Domain');
+if (typeof(ArcherTech.Common.Domain.SearchMapOptions) === 'undefined') {
+ArcherTech.Common.Domain.SearchMapOptions=gtc("ArcherTech.Common.Domain.SearchMapOptions");
+ArcherTech.Common.Domain.SearchMapOptions.registerClass('ArcherTech.Common.Domain.SearchMapOptions');
+}
+Type.registerNamespace('ArcherTech.Web.Presentation.DataContainers');
+if (typeof(ArcherTech.Web.Presentation.DataContainers.ContentIdContainer) === 'undefined') {
+ArcherTech.Web.Presentation.DataContainers.ContentIdContainer=gtc("ArcherTech.Web.Presentation.DataContainers.ContentIdContainer");
+ArcherTech.Web.Presentation.DataContainers.ContentIdContainer.registerClass('ArcherTech.Web.Presentation.DataContainers.ContentIdContainer');
+}
+Type.registerNamespace('ArcherTech.Web.Presentation.Search.Maps');
+if (typeof(ArcherTech.Web.Presentation.Search.Maps.MapPointDetail) === 'undefined') {
+ArcherTech.Web.Presentation.Search.Maps.MapPointDetail=gtc("ArcherTech.Web.Presentation.Search.Maps.MapPointDetail");
+ArcherTech.Web.Presentation.Search.Maps.MapPointDetail.registerClass('ArcherTech.Web.Presentation.Search.Maps.MapPointDetail');
+}
+if (typeof(ArcherTech.Web.Presentation.DataContainers.MapContentIdContainer) === 'undefined') {
+ArcherTech.Web.Presentation.DataContainers.MapContentIdContainer=gtc("ArcherTech.Web.Presentation.DataContainers.MapContentIdContainer");
+ArcherTech.Web.Presentation.DataContainers.MapContentIdContainer.registerClass('ArcherTech.Web.Presentation.DataContainers.MapContentIdContainer');
+}
+Type.registerNamespace('ArcherTech.Web.UI.Controls');
+if (typeof(ArcherTech.Web.UI.Controls.ComboboxItem) === 'undefined') {
+ArcherTech.Web.UI.Controls.ComboboxItem=gtc("ArcherTech.Web.UI.Controls.ComboboxItem");
+ArcherTech.Web.UI.Controls.ComboboxItem.registerClass('ArcherTech.Web.UI.Controls.ComboboxItem');
+}
+Type.registerNamespace('ArcherTech.Web.Modules.GenericContent');
+if (typeof(ArcherTech.Web.Modules.GenericContent.ContentSaveResponse) === 'undefined') {
+ArcherTech.Web.Modules.GenericContent.ContentSaveResponse=gtc("ArcherTech.Web.Modules.GenericContent.ContentSaveResponse");
+ArcherTech.Web.Modules.GenericContent.ContentSaveResponse.registerClass('ArcherTech.Web.Modules.GenericContent.ContentSaveResponse');
+}
+if (typeof(ArcherTech.Web.UI.Controls.FastTreeItem) === 'undefined') {
+ArcherTech.Web.UI.Controls.FastTreeItem=gtc("ArcherTech.Web.UI.Controls.FastTreeItem");
+ArcherTech.Web.UI.Controls.FastTreeItem.registerClass('ArcherTech.Web.UI.Controls.FastTreeItem');
+}
+Type.registerNamespace('ArcherTech.Common.Enums');
+if (typeof(ArcherTech.Common.Enums.FieldType) === 'undefined') {
+ArcherTech.Common.Enums.FieldType = function() { throw Error.invalidOperation(); }
+ArcherTech.Common.Enums.FieldType.prototype = {None: 0,Text: 1,Numeric: 2,Date: 3,ValuesList: 4,TrackingID: 6,ExternalLinks: 7,UsersGroupsList: 8,CrossReference: 9,Attachment: 11,Image: 12,CrossModuleStatusTracking: 14,RecordPermissions: 15,Matrix: 16,IpAddress: 19,RecordStatus: 20,FirstPublishedDate: 21,LastUpdatedDate: 22,RelatedRecords: 23,SubForm: 24,HistoryLog: 25,Discussion: 26,MultiReference: 27,QuestionnaireReference: 28,ContentAccessHistory: 29,Voting: 30,Scheduler: 31,CastScoreCard: 1001}
+ArcherTech.Common.Enums.FieldType.registerEnum('ArcherTech.Common.Enums.FieldType', true);
+}

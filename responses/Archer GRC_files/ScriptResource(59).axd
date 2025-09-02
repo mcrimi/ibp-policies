@@ -1,0 +1,2 @@
+﻿
+Type.registerNamespace('ArcherTech.Enums');ArcherTech.Enums.SetDateActionOptionType=function(){};ArcherTech.Enums.SetDateActionOptionType.prototype={Offset:1,Specific:2};ArcherTech.Enums.SetDateActionOptionType.registerEnum('ArcherTech.Enums.SetDateActionOptionType',false);

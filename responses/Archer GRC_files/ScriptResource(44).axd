@@ -1,0 +1,2 @@
+﻿
+Type.registerNamespace('ArcherTech.Enums');ArcherTech.Enums.FieldMessageDisplayModeType=function(){};ArcherTech.Enums.FieldMessageDisplayModeType.prototype={None:0,AboveField:1,LeftOfField:2};ArcherTech.Enums.FieldMessageDisplayModeType.registerEnum('ArcherTech.Enums.FieldMessageDisplayModeType',false);

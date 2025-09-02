@@ -1,0 +1,2 @@
+﻿
+Type.registerNamespace('ArcherTech.Enums');ArcherTech.Enums.LevelLayoutItemType=function(){};ArcherTech.Enums.LevelLayoutItemType.prototype={Field:2,TextBox:3,Placeholder:4,Custom:5};ArcherTech.Enums.LevelLayoutItemType.registerEnum('ArcherTech.Enums.LevelLayoutItemType',false);

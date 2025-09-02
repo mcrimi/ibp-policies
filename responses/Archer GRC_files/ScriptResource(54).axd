@@ -1,0 +1,2 @@
+﻿
+Type.registerNamespace('ArcherTech.Enums');ArcherTech.Enums.EventActionType=function(){};ArcherTech.Enums.EventActionType.prototype={FilterValuesList:1,SetValuesList:2,SetDate:3,GenerateNotification:4,ApplyConditionalLayout:5};ArcherTech.Enums.EventActionType.registerEnum('ArcherTech.Enums.EventActionType',false);

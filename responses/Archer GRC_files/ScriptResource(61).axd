@@ -1,0 +1,16 @@
+﻿
+Type.registerNamespace('ArcherTech.UI');ArcherTech.UI.HistoryLog=function(element)
+{ArcherTech.UI.HistoryLog.initializeBase(this,[element]);this._displayControlType=null;this._isHidden=null;this._isInSubSection=false;this._namingContainer=null;};ArcherTech.UI.HistoryLog.prototype={initialize:function()
+{ArcherTech.UI.HistoryLog.callBaseMethod(this,'initialize');if(this._isHidden)
+{this.changeDisplay(false);}},dispose:function()
+{ArcherTech.UI.HistoryLog.callBaseMethod(this,'dispose');},get_displayControlType:function()
+{return this._displayControlType;},set_displayControlType:function(val)
+{this._displayControlType=val;},get_isHidden:function()
+{return this._isHidden;},set_isHidden:function(val)
+{this._isHidden=val;},get_namingContainer:function()
+{return this._namingContainer;},set_namingContainer:function(val)
+{this._namingContainer=val;},get_isInSubSection:function()
+{return this._isInSubSection;},set_isInSubSection:function(val)
+{this._isInSubSection=val;},changeDisplay:function(show)
+{var func=show?'removeClass':'addClass';switch(this._displayControlType)
+{case'Embedded':$($get(this._namingContainer))[func]('hidden');break;case'Link':$(this._element)[func]('hidden');break;default:break;}}};ArcherTech.UI.HistoryLog.registerClass('ArcherTech.UI.HistoryLog',Sys.UI.Control);

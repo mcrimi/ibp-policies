@@ -1,0 +1,2 @@
+﻿
+steal.plugins('archer/ui/time').then(function($){$(function(){Archer.UI.TimePopout=(function(){var popout=$('<div id=\'archer_ui_time_popout\'/>').hide().appendTo(document.body).archer_ui_time();return{show:function(element,date){popout.triggerHandle('show',element);}};})();});});

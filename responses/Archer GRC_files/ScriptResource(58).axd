@@ -1,0 +1,2 @@
+﻿
+Type.registerNamespace('ArcherTech.Enums');ArcherTech.Enums.SectionLayoutActionType=function(){};ArcherTech.Enums.SectionLayoutActionType.prototype={Display:0,ReadOnly:1,Hide:2,ForceDisplay:3};ArcherTech.Enums.SectionLayoutActionType.registerEnum('ArcherTech.Enums.SectionLayoutActionType',false);

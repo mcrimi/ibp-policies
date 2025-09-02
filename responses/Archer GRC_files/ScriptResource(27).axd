@@ -1,0 +1,3 @@
+﻿
+steal.plugins('phui/combobox/ajax','phui/combobox/combobox_select').then(function($){$.extend(Phui.Combobox.defaults,{emptyItemsText:$C('EmptyMsg'),noSelectionMsg:$C('NoSelectionMsg')});if(Phui.Combobox.Ajax){$.extend(Phui.Combobox.Ajax.defaults,{loadingMessage:$C('LoadingMsg')});}
+Phui.Combobox.PostBack=function(sender,uniqueId){var controller=$(sender.currentTarget).controller();if(controller){var currentItem=controller.currentItem;if(currentItem&&currentItem.item){setTimeout(function(){__doPostBack(uniqueId,'ComboChanged');},0);}}};});

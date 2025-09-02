@@ -1,0 +1,2 @@
+﻿
+Type.registerNamespace('ArcherTech.Enums');ArcherTech.Enums.ConditionalLayoutActionOptionType=function(){};ArcherTech.Enums.ConditionalLayoutActionOptionType.prototype={Section:1,LayoutItem:2};ArcherTech.Enums.ConditionalLayoutActionOptionType.registerEnum('ArcherTech.Enums.ConditionalLayoutActionOptionType',false);

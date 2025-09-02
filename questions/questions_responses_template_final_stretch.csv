@@ -1,0 +1,93 @@
+ID,Question,Response (Yes/No),Comment
+SEF-01.1,Do you maintain liaisons and points of contact with local authorities in accordance with contracts and appropriate regulations?,,
+SEF-02.1,Do you have a documented security incident response plan?,,
+SEF-02.2,"Do you integrate customized tenant requirements into your security incident response plans?
+
+Will Bayer be notified within 24 hours of a confirmed incident/breach?",,
+SEF-02.3,Do you publish a roles and responsibilities document specifying what you vs. your tenants are responsible for during security incidents?,,
+SEF-02.4,Have you tested your security incident response plans in the last year?,,
+SEF-03.1,"Are workforce personnel and external business relationships adequately informed of their responsibility, and, if required, consent and/or contractually required to report all information security events in a timely manner?
+
+Please describe your SIEM solution and what events are logged and monitored. Are alerts generated when certain thresholds are reached (e.g., changes to audit records (1), unauthorized elevation of privileges (1), take over ownership (1), failed logins (5))?",,
+SEF-03.2,"Do you have predefined communication channels for workforce personnel and external business partners to report incidents in a timely manner adhering to applicable legal, statutory, or regulatory compliance obligations?",,
+SEF-04.1,Does your incident response plan comply with industry standards for legally admissible chain-of-custody management processes and controls?,,
+SEF-04.2,Does your incident response capability include the use of legally admissible forensic data collection and analysis techniques?,,
+SEF-04.3,Are you capable of supporting litigation holds (freeze of data from a specific point in time) for a specific tenant without freezing other tenant data?,,
+SEF-04.4,Do you enforce and attest to tenant data separation when producing data in response to legal subpoenas?,,
+SEF-05.1,"Do you monitor and quantify the types, volumes, and impacts on all information security incidents?",,
+SEF-05.2,"Will you share statistical information for security incident data with your tenants upon request?
+
+Note - This is specifically referring to only incidents that may directly impact/relate to Bayer
+
+
+Supply Chain Management, Transparency, and AccountabilityCOLLAPSE",,
+STA-01.1,"Do you inspect and account for data quality errors and associated risks, and work with your cloud supply-chain partners to correct them?",,
+STA-01.2,"Do you design and implement controls to mitigate and contain data security risks through proper separation of duties, role-based access, and least-privileged access for all personnel within your supply chain?
+
+How do you address security with your hosting provider and any other providers?",,
+STA-02.1,"Do you make security incident information available to all affected customers and providers periodically through electronic methods (e.g., portals)?",,
+STA-03.1,Do you collect capacity and use data for all relevant components of your cloud service offering?,,
+STA-03.2,Do you provide tenants with capacity planning and use reports?,,
+STA-04.1,"Do you perform annual internal assessments of conformance and effectiveness of your policies, procedures, and supporting measures and metrics?",,
+STA-05.1,"Do you select and monitor outsourced providers in compliance with laws in the country where the data is processed, stored, and transmitted?",,
+STA-05.2,Do you select and monitor outsourced providers to ensure that they are in compliance with applicable legislation?,,
+STA-05.3,Does legal counsel review all third-party agreements?,,
+STA-05.4,Do third-party agreements include provision for the security and protection of information and assets?,,
+STA-05.5,Do you have the capability to recover data for a specific customer in the case of a failure or data loss?,,
+STA-05.6,"Do you have the capability to restrict the storage of customer data to specific countries or geographic locations?
+
+Where will Bayer data be stored?",,
+STA-05.7,"Can you provide the physical location/geography of storage of a tenant’s data upon request?
+
+Where is the data physically located? Has that been determined yet?",,
+STA-05.8,Can you provide the physical location/geography of storage of a tenant's data in advance?,,
+STA-05.9,"Do you allow tenants to define acceptable geographical locations for data routing or resource instantiation?
+
+If Bayer requests this, is it a possibility?",,
+STA-05.10,"Are systems in place to monitor for privacy breaches and notify tenants expeditiously if a privacy event may have impacted their data?
+
+How quickly are tenants notified?",,
+STA-05.11,"Do you allow tenants to opt out of having their data/metadata accessed via inspection technologies?
+
+Please describe this process If metadata is collected, what type of data is it and how is it used?",,
+STA-05.12,Do you provide the client with a list and copies of all subprocessing agreements and keep this updated?,,
+STA-06.1,Do you review the risk management and governance processes of partners to account for risks inherited from other members of that partner's supply chain?,,
+STA-07.1,"Are policies and procedures established, and supporting business processes and technical measures implemented, for maintaining complete, accurate, and relevant agreements (e.g., SLAs) between providers and customers (tenants)?",,
+STA-07.2,Do you have the ability to measure and address non-conformance of provisions and/or terms across the entire supply chain (upstream/downstream)?,,
+STA-07.3,Can you manage service-level conflicts or inconsistencies resulting from disparate supplier relationships?,,
+STA-07.4,Do you provide tenants with ongoing visibility and reporting of your operational Service Level Agreement (SLA) performance?,,
+STA-07.5,"Do you make standards-based information security metrics (CSA, CAMM, etc.) available to your tenants?
+
+If yes, please specify which metrics",,
+STA-07.6,Do you provide customers with ongoing visibility and reporting of your SLA performance?,,
+STA-07.7,Do your data management policies and procedures address tenant and service level conflicts of interests?,,
+STA-07.8,Do you review all service level agreements at least annually?,,
+STA-08.1,"Do you assure reasonable information security across your information supply chain by performing an annual review?
+
+Do you have any contractual obligations with providers to ensure security requirements are met?",,
+STA-08.2,Does your annual review include all partners/third-party providers upon which your information supply chain depends?,,
+STA-09.1,"Do you mandate annual information security reviews and audits of your third party providers to ensure that all agreed upon security requirements are met?
+
+Please describe this process",,
+STA-09.2,"Do you have external third party services conduct vulnerability scans and periodic penetration tests on your applications and networks?
+
+What tools are used? Can you provide results?
+
+
+Threat and Vulnerability ManagementCOLLAPSE",,
+TVM-01.1,"Do you have anti-malware programs that support or connect to your cloud service offerings installed on all of your IT infrastructure network and systems components?
+
+What tools are used?",,
+TVM-01.2,"Do you ensure that security threat detection systems using signatures, lists, or behavioral patterns are updated across all infrastructure components as prescribed by industry best practices?
+
+What tools are used?",,
+TVM-02.1,Do you conduct network-layer vulnerability scans regularly as prescribed by industry best practices?,,
+TVM-02.2,Do you conduct application-layer vulnerability scans regularly as prescribed by industry best practices?,,
+TVM-02.3,Do you conduct local operating system-layer vulnerability scans regularly as prescribed by industry best practices?,,
+TVM-02.4,Will you make the results of vulnerability scans available to tenants at their request?,,
+TVM-02.5,"Do you have a capability to patch vulnerabilities across all of your computing devices, applications, and systems?
+
+Please specify your patching timeframes for Critical/High/Medium findings.",,
+TVM-02.6,Do you inform customers (tenant) of policies and procedures and identified weaknesses if customer (tenant) data is used as part the service and/or customer (tenant) has some shared responsibility over implementation of control?,,
+TVM-03.1,"Is mobile code authorized before its installation and use, and the code configuration checked, to ensure that the authorized mobile code operates according to a clearly defined security policy?",,
+TVM-03.2,Is all unauthorized mobile code prevented from executing?,,

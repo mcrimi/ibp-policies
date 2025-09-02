@@ -1,0 +1,2 @@
+﻿
+Type.registerNamespace('ArcherTech.Enums');ArcherTech.Enums.FilterType=function(){};ArcherTech.Enums.FilterType.prototype={Text:1,Numeric:2,NumericBetween:3,NumericRange:4,ValueList:5,UserGroup:6,Matrix:7,Reference:8,DateOffset:9,DateComparison:10,DateRange:11,CurrentDate:12,ByContent:13,RecordStatus:14,Cast:15,IpAddress:16,ByLevelFilter:17,ChangedField:18,FieldValueMatch:19};ArcherTech.Enums.FilterType.registerEnum('ArcherTech.Enums.FilterType',false);

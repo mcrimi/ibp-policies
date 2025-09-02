@@ -51,8 +51,8 @@ The **BMS** is a **web-based client/server application** that provides a standar
   - (Planned/optional) Single Sign-On integration with Active Directory.  
 - Annual **penetration testing and third-party audits**.  
 
-### User Permission Structure
-The BMS uses a multi-level hierarchy for managing user permissions, which is illustrated in the provided diagram.
+#### User Permission Structure
+The BMS uses a multi-level hierarchy for managing user permissions. This structure ensures a **segregation of duties**, a core part of the security questionnaire, by limiting user access based on their roles and responsibilities. It also adheres to the **principle of least privilege**. The BMS can enforce data access segmentation in a multi-tenant architecture.
 
 * **Instance Level:** This is the highest level of access and is where the BMS instance and its general configuration are managed. A **Super Admin** has control at this level.
 * **Crop Level:** This level manages permissions for specific crops, including germplasm, breeding methods, ontologies, and locations. **Crop Permissions** are assigned to users to control their access to data related to a particular crop.
@@ -60,7 +60,7 @@ The BMS uses a multi-level hierarchy for managing user permissions, which is ill
 
 
 
-IBP is also moving towards compliance with industry standards like:  
+#### IBP is also moving towards compliance with industry standards like:  
 - **CSA STAR / CAIQ** (self-assessment available).  
 - Potential future certification goals: **ISO 27001**, **SOC 2**.  
 
@@ -70,8 +70,6 @@ IBP is also moving towards compliance with industry standards like:
 
 - **Identity Management**: Currently handled internally by the application. Full SSO integration is planned for future releases.  
 
-
----
 
 ## 7. Use Cases
 
@@ -107,10 +105,10 @@ IBP was officially selected as a partner for Bayer's joint venture in China in N
 
 A key decision was made to test a Breeding Management System (BMS) instance hosted on an AWS server in Singapore to check the viability of a Software as a Service (SaaS) model. However, due to China's internet regulations, the site was inaccessible, leading to the decision that the system would need to be hosted on AWS China regions for reliable service.
 
-This structure ensures a **segregation of duties**, a core part of the security questionnaire, by limiting user access based on their roles and responsibilities. It also adheres to the **principle of least privilege**. The BMS can enforce data access segmentation in a multi-tenant architecture.
 
 ### Data Migration and Project Timeline
 The project's testing phase, originally planned for late June to early July, was pushed back to mid-July. The team decided to automate the data migration process using R or Python scripts with API calls to reduce the estimated time.
 
 ### Security and Legal Compliance
-Bayer requested the completion of a security questionnaire as part of the IT Risk Assessment process. Mariano Crimi is assigned as the technical contact to complete this questionnaire and was given a deadline of September 8th.
+Bayer requested the completion of a security questionnaire as part of the IT Risk Assessment process. Mariano Crimi (me) is assigned as the technical contact to complete this questionnaire and was given a deadline of September 8th.
+
