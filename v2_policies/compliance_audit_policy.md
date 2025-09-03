@@ -21,7 +21,6 @@ IBP maintains compliance with the following key requirements:
 |--------------------|---------------|------------------|------------------|
 | **GDPR** | Personal data processing | Data protection, privacy rights, breach notification | Mariano Crimi |
 | **AWS Security Standards** | Cloud infrastructure | Security best practices, shared responsibility | Diego Cuenya |
-| **ISO 27001 Principles** | Information security management | Security controls, risk management | Mariano Crimi |
 | **Contractual Requirements** | Customer and vendor agreements | Security terms, SLA compliance | Jean-Marcel Ribaut |
 
 ### 3.2 Compliance Management Approach
